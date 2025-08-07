@@ -66,18 +66,37 @@
       margin-bottom: 20px;
       border-radius: 5px;
     }
-    .project h5 {
-      color: #ffd700;
-    }
-    a, a:hover {
-      color: #ffd700;
-    }
+
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: #ddd;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-	    	 <img src="Assests/c.jpg" alt="Garun Kumar" class="rounded-circle shadow mb-3" width="250">
+	 <img src="Assests/c.jpg" alt="Garun Kumar" class="rounded-circle shadow mb-3" width="250">
       <h1>Garun Kumar</h1>
       <p>Senior Software Developer</p>
       <nav class="mt-3">
@@ -95,7 +114,8 @@
 
   <section id="about" data-aos="fade-up">
     <div class="container">
-      <h2>About Me</h2>
+    
+	   <h2 class="text mb-5">👨‍💻 About Me</h2>
       <p>
 	  🔹 Full-Stack .NET Developer | Cloud Solutions Architect | Microservices Expert | Integration Specialist
 
@@ -143,21 +163,52 @@ I’m passionate about building clean, modular, and testable code while keeping 
 	  </p></div>
   </section>
 <div id="experience">
-  <section  data-aos="fade-up">
-    <div class="container">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>ARVIUS Software Pvt Ltd</strong> – Technical Lead (Sep 2024 – Present)</li>
-        <li><strong>AbyM Technology</strong> – Senior Software Developer (Team Lead) (Dec 2023 – Aug 2024)</li>
-        <li><strong>CrownMiz Agency</strong> – Software Developer (Aug 2020 – Dec 2023)</li>
-      </ul>
+  <div class="container">
+    <h2 class="text mb-5">💼 Experience</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card bg-secondary border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">ARVIUS Software Pvt Ltd</h5>
+            <h6 class="text-warning">Technical Lead</h6>
+            <p class="text mb-2"><b>Sep 2024 – Present</b></p>
+            <p>Leading architecture and development of scalable enterprise solutions, mentoring dev teams, and driving cloud-first delivery.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-secondary border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">AbyM Technology</h5>
+            <h6 class="text-warning">Senior Software Developer / Team Lead</h6>
+            <p class="text mb-2"><b>Dec 2023 – Aug 2024</b></p>
+            <p>Managed a high-performing dev team, led API-first integrations, and implemented CI/CD for faster delivery pipelines.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-secondary border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">CrownMiz Creative Agency</h5>
+            <h6 class="text-warning">Software Developer</h6>
+            <p class="text mb-2"><b>Aug 2020 – Dec 2023</b></p>
+            <p>Built and maintained  software using .NET Core, Web API, and frontend technologies.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+
 </div>
 <div id="projects">
   <section  data-aos="fade-up">
     <div class="container">
-      <h2>Projects</h2>
+	   <h2 class="text mb-5">🚀 Projects</h2>
+    
 
       <div class="project">
         <h5>Communication Engine – Dr Lal PathLabs</h5>
@@ -273,7 +324,7 @@ integration across the organization. </p>
 <div id="skills">
 <section id="" class="py-5" data-aos="fade-up">
   <div class="container">
-    <h2 class="text-center mb-5">💼 Skills & Expertise</h2>
+    <h2 class="text mb-5">💼 Skills & Expertise</h2>
     <div class="row g-4">
 
       <div class="col-md-6 col-lg-4">
@@ -335,7 +386,7 @@ integration across the organization. </p>
 
 <section id="contact" class="py-5 bg-dark text-light" data-aos="fade-up">
   <div class="container">
-    <h2 class="text-center mb-5">📞 Contact Me</h2>
+   <h2 class="text mb-5">📞 Contact Me</h2>
     <div class="row g-5 align-items-center">
 
       <!-- Left Side: Info -->
@@ -396,4 +447,3 @@ integration across the organization. </p>
   <script>AOS.init();</script>
 </body>
 </html>
-
