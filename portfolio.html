@@ -65,38 +65,49 @@
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 5px;
+      transition: transform 0.3s;
     }
-
-
-
-.card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.card h6 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.card p {
-  color: #ddd;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-}
-
-
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .card h6 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .card p {
+      color: #ddd;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    @media (max-width: 767px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header img {
+        width: 150px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+	
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- Header -->
+  <header data-aos="fade-down">
     <div class="container">
-	 <img src="Assests/c.jpg" alt="Garun Kumar" class="rounded-circle shadow mb-3" width="250">
+      <img src="Assests/c.jpg" alt="Garun Kumar" class="rounded-circle shadow mb-3" width="200">
       <h1>Garun Kumar</h1>
       <p>Senior Software Developer</p>
       <nav class="mt-3">
@@ -112,10 +123,10 @@
     </div>
   </header>
 
+  <!-- About Me Section -->
   <section id="about" data-aos="fade-up">
     <div class="container">
-    
-	   <h2 class="text mb-5">👨‍💻 About Me</h2>
+      <h2 class="text mb-5">👨‍💻 About Me</h2>
       <p>
 	  🔹 Full-Stack .NET Developer | Cloud Solutions Architect | Microservices Expert | Integration Specialist
 
@@ -160,11 +171,14 @@ On the frontend, I utilize JavaScript to build responsive, intuitive user interf
 <b>Security</b>: OAuth2, JWT,RSA, API Key Management<br> <br>
 
 I’m passionate about building clean, modular, and testable code while keeping performance and security in focus. Whether working independently or within cross-functional teams, I strive to deliver robust solutions that align with business goals and user needs.
-	  </p></div>
+
+	  </p>    </div>
   </section>
-<div id="experience">
-  <div class="container">
-    <h2 class="text mb-5">💼 Experience</h2>
+
+  <!-- Experience Section -->
+  <section id="experience" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text mb-5">💼 Experience</h2>
     <div class="row g-4">
 
       <div class="col-md-4">
@@ -201,15 +215,14 @@ I’m passionate about building clean, modular, and testable code while keeping 
       </div>
 
     </div>
-  </div>
+    </div>
+  </section>
 
-</div>
-<div id="projects">
-  <section  data-aos="fade-up">
+  <!-- Placeholder for More Sections -->
+  <section id="projects" data-aos="fade-up">
     <div class="container">
-	   <h2 class="text mb-5">🚀 Projects</h2>
-    
-
+      <h2 class="text mb-5">🚀 Projects</h2>
+      <section  data-aos="fade-up">
       <div class="project">
         <h5>Communication Engine – Dr Lal PathLabs</h5>
         <p>The Communication Engine project for 
@@ -320,10 +333,11 @@ integration across the organization. </p>
       </div>
 	    </div>
   </section>
-</div>
-<div id="skills">
-<section id="" class="py-5" data-aos="fade-up">
-  <div class="container">
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+     <div class="container">
     <h2 class="text mb-5">💼 Skills & Expertise</h2>
     <div class="row g-4">
 
@@ -379,13 +393,11 @@ integration across the organization. </p>
 
     </div>
   </div>
-</section>
-</div>
+  </section>
 
-
-
-<section id="contact" class="py-5 bg-dark text-light" data-aos="fade-up">
-  <div class="container">
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-light" data-aos="fade-up">
+   <div class="container">
    <h2 class="text mb-5">📞 Contact Me</h2>
     <div class="row g-5 align-items-center">
 
@@ -434,17 +446,22 @@ integration across the organization. </p>
 
     </div>
   </div>
-</section>
+  </section>
 
-
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>© 2025 Garun Kumar | All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
 </html>
-
